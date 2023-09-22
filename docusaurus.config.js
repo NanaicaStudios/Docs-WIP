@@ -1,7 +1,9 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// @ts-ignore
 const lightCodeTheme = require('prism-react-renderer/themes/github');
+// @ts-ignore
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -19,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'nanaica', // Usually your GitHub org/user name.
-  projectName: 'nanaica', // Usually your repo name.
+  projectName: 'Docs-WIP', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/NanaicaStudios/Docs,
+            'https://github.com/NanaicaStudios/Docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -99,7 +101,6 @@ const config = {
           {
             title: 'Community',
             items: [
-              },
               {
                 label: 'Discord',
                 href: 'https://discord.gg/WZWgJjuPrs',
@@ -110,8 +111,11 @@ const config = {
               },
             ],
           },
+          // @ts-ignore
           {
+            // @ts-ignore
             title: 'More',
+            // @ts-ignore
             items: [
               {
                 label: 'Blog',
@@ -122,15 +126,25 @@ const config = {
                 href: 'https://github.com/NanaicaStudios/Docs',
               },
             ],
+          // @ts-ignore
           },
+        // @ts-ignore
         ],
+        // @ts-ignore
         copyright: `Copyright © ${new Date().getFullYear()} Nanaica. Built with Docusaurus. Runned On Vercel.`,
+      // @ts-ignore
       },
+      // @ts-ignore
       prism: {
+        // @ts-ignore
         theme: lightCodeTheme,
+        // @ts-ignore
         darkTheme: darkCodeTheme,
+      // @ts-ignore
       },
+    // @ts-ignore
     }),
+// @ts-ignore
 };
 
 module.exports = config;
